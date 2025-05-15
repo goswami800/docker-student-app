@@ -23,7 +23,7 @@ services:
 
   backend:
     build:
-      context: ./BE
+      context: .
     container_name: tomcat-backend
     ports:
       - "8080:8080"
@@ -39,7 +39,7 @@ services:
 
   frontend:
     build:
-      context: ./FE
+      context: .
     container_name: apache-frontend
     ports:
       - "80:80"
